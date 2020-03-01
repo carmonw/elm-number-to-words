@@ -5,7 +5,7 @@ This package provides utility functions for converting numbers to their written 
 ## Installation
 
 ```
-elm package install carmonw/elm-number-to-words
+elm install carmonw/elm-number-to-words
 ```
 
 ## Usage
