@@ -1,5 +1,6 @@
 module NumberToWords exposing
     ( intToWords
+    , roundToWords
     , floorToWords
     )
 
@@ -13,7 +14,7 @@ module NumberToWords exposing
 
 # Float to String
 
-@docs floatToWords
+@docs roundToWords, floatToWords
 
 -}
 
@@ -34,6 +35,22 @@ import Util
 intToWords : Int -> String
 intToWords =
     Util.spellInteger
+
+
+{-| Convert a `Float` to its written form after rounding it to the nearest integer.
+
+    import NumberToWords
+
+    NumberToWords.roundToWords 1255.20
+    --> "one thousand, two hundred fifty-five"
+
+    NumberToWords.roundToWords 1232551.50
+    --> "one million, two hundred thirty-two thousand, five hundred fifty-two"
+
+-}
+roundToWords : Float -> String
+roundToWords =
+    Util.spellInteger << round
 
 
 {-| Convert a `Float` to its written form after rounding it down.
