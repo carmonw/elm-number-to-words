@@ -10,12 +10,6 @@ elm install carmonw/elm-number-to-words
 
 ## Usage
 
-```elm
-import NumberToWords
-```
-
-## Examples
-
 ### Converting An Int To Its Written Form
 
 ```elm
