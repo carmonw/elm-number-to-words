@@ -2,7 +2,7 @@
   "name": "elm-number-to-words",
   "version": "1.0.0",
   "description": "Utility functions for converting numbers to its written form",
-  "author": "Carmon Wong",
+  "author": "carmonw",
   "license": "ISC",
   "homepage": "https://github.com/carmonw/elm-number-to-words#readme",
   "repository": {
