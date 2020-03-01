@@ -1,6 +1,6 @@
 module NumberToWords exposing
     ( intToWords
-    , roundToWords, floorToWords
+    , roundToWords, floorToWords, ceilingToWords
     )
 
 {-| This package converts numbers to its written form.
@@ -13,7 +13,7 @@ module NumberToWords exposing
 
 # Float to String
 
-@docs roundToWords, floorToWords
+@docs roundToWords, floorToWords, ceilingToWords
 
 -}
 
@@ -66,3 +66,19 @@ roundToWords =
 floorToWords : Float -> String
 floorToWords =
     Util.spellInteger << floor
+
+
+{-| Convert a `Float` to its written form after rounding it up.
+
+    import NumberToWords
+
+    NumberToWords.ceilingToWords 1255.20
+    --> "one thousand, two hundred fifty-six"
+
+    NumberToWords.ceilingToWords 1232551.20
+    --> "one million, two hundred thirty-two thousand, five hundred fifty-two"
+
+-}
+ceilingToWords : Float -> String
+ceilingToWords =
+    Util.spellInteger << ceiling
