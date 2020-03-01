@@ -32,8 +32,8 @@ import Util
 
 -}
 intToWords : Int -> String
-intToWords n =
-    Util.spellInteger n
+intToWords =
+    Util.spellInteger
 
 
 {-| Convert a `Float` to its written form after rounding it down.
