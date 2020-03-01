@@ -1,7 +1,6 @@
 module NumberToWords exposing
     ( intToWords
-    , roundToWords
-    , floorToWords
+    , roundToWords, floorToWords
     )
 
 {-| This package converts numbers to its written form.
@@ -14,7 +13,7 @@ module NumberToWords exposing
 
 # Float to String
 
-@docs roundToWords, floatToWords
+@docs roundToWords, floorToWords
 
 -}
 
