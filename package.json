@@ -1,6 +1,6 @@
 {
   "name": "elm-number-to-words",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Utility functions for converting numbers to its written form",
   "author": "carmonw",
   "license": "BSD-3-Clause",
