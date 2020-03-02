@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Utility functions for converting numbers to its written form",
   "author": "carmonw",
-  "license": "ISC",
+  "license": "BSD-3-Clause",
   "homepage": "https://github.com/carmonw/elm-number-to-words#readme",
   "repository": {
     "type": "git",
